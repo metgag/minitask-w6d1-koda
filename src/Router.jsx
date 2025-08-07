@@ -3,7 +3,7 @@ import Header from './components/Header'
 import App from './App'
 import Login from './pages/Login'
 import ShoppingApp from './pages/shopping/ShoppingApp'
-// import Todo from './pages/to-do/App'
+import TodoApp from './pages/todo/TodoList'
 
 function Router() {
   return (
@@ -13,7 +13,7 @@ function Router() {
         <Route path="" element={<RouteLayout />}>
           <Route index element={<App />} />
           <Route path="/shopping" element={<ShoppingApp />} />
-          {/* <Route path="/to-do" element={<Todo />} /> */}
+          <Route path="/todo" element={<TodoApp />} />
         </Route>
       </Routes>
     </BrowserRouter>
